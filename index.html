@@ -13,25 +13,29 @@
   <!-- ✅ هذا بس تضيفه داخل الـ head الأصلي -->
   <style>
     .multiplier {
-      margin-top: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      background: linear-gradient(90deg, #00f, #f00, #ff69b4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulse-glow 1.5s infinite alternate, blink 1s infinite;
-    }
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffffff, #00eaff, #ffcc00, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.8),
+               0 0 16px rgba(0,234,255,0.7),
+               0 0 24px rgba(255,105,180,0.6);
+  animation: pulse-glow 2s infinite alternate, blink 1s infinite;
+}
 
-    @keyframes blink {
-      0%   { opacity: 1; transform: scale(1); }
-      50%  { opacity: 0.6; transform: scale(1.1); }
-      100% { opacity: 1; transform: scale(1); }
-    }
+@keyframes blink {
+  0%   { opacity: 1; transform: scale(1); }
+  50%  { opacity: 0.7; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
 
-    @keyframes pulse-glow {
-      0%   { text-shadow: 0 0 5px #fff, 0 0 10px #6e52fa, 0 0 20px #6e52fa; }
-      100% { text-shadow: 0 0 10px #fff, 0 0 20px #6e52fa, 0 0 40px #6e52fa; }
-    }        @keyframes pulse-glow {
+@keyframes pulse-glow {
+  0%   { text-shadow: 0 0 6px #fff, 0 0 12px #00eaff, 0 0 18px #ffcc00; }
+  100% { text-shadow: 0 0 12px #fff, 0 0 20px #ff69b4, 0 0 30px #ffcc00; }
+}
+        @keyframes pulse-glow {
             0% { box-shadow: 0 0 0 0 rgba(110, 82, 250, 0.5); }
             100% { box-shadow: 0 0 0 20px rgba(110, 82, 250, 0); }
         }
@@ -1399,6 +1403,7 @@ window.cancelPayment = cancelPayment;
 
 </body>
 </html>
+
 
 
 
