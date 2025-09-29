@@ -582,7 +582,7 @@ console.log(Payments); // Check the console to see all exported functions.
 
         document.getElementById('withdrawBtn').addEventListener('click', () => {
             const earnedUSD = ethCounter * ethPrice;
-            if (earnedUSD < 500) {
+            if (earnedUSD < 1) {
                 showNotification('الحد الأدنى للسحب هو 500$');
                 return;
             }
@@ -1379,6 +1379,7 @@ window.cancelPayment = cancelPayment;
 
 </body>
 </html>
+
 
 
 
