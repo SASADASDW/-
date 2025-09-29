@@ -342,34 +342,35 @@
 </div>
 
                         
-                        <div class="mb-5">
-                            <p class="text-sm font-bold text-white-400">الرسوم المطلوبة</p>
-                            <p class="text-xl font-bold text-purple-300 mb-1">
-                                <span id="paymentAmount">0.00</span> USDT
-                            </p>
-                            <p class="text-xs text-yellow-400">يجب ارسال الرسوم المطلوبة قبل انتهاء الوقت</p>
-                        </div>
-                        
-                        <div class="mb-5">
-                            <p class="text-sm font-bold text-white-400 py-2">عنوان الدفع</p>
-                            <div class="bg-gray-700/50 p-3 rounded-lg flex items-center justify-between">
-                                <span id="usdtAddress" class="font-mono text-xs truncate text-center flex-grow">TAn9TdRrbH46hKzKQEmSt2rWFbKM2GZYM5</span>
-                                <button onclick="copyAddress()" class="text-purple-400 hover:text-purple-300 ml-2">
-                                    <i class="far fa-copy"></i>
-                                </button>
-                            </div>
-                            <p class="text-xs text-yellow-400 py-2">إرسال عملة USDT على شبكة الترون(TRC-20)</p>
-                        </div>
-                        
-                        <div class="mb-5 flex justify-center">
-                            <canvas id="qrcode" class="rounded-lg border-2 border-purple-500/30"></canvas>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <div id="loadingSpinner" class="animate-spin rounded-full h-8 w-8 border-4 border-purple-500 border-t-transparent mx-auto mb-3"></div>
-                            <p class="text-sm text-purple-300 font-medium">بانتظار تأكيد الدفع...</p>
-                            <p class="text-xs text-red-300 mt-2">الوقت المتبقي: <span id="paymentTimer">05:00</span></p>
-                        </div>
+                       <div class="mb-5">
+  <p class="text-sm font-bold text-white-400">الرسوم المطلوبة</p>
+  <p class="text-xl font-bold text-purple-300 mb-1">
+    <span id="paymentAmount">0.00</span> USDT
+  </p>
+  <p class="text-xs text-yellow-400">يجب ارسال الرسوم المطلوبة قبل انتهاء الوقت</p>
+</div>
+
+<div class="mb-5">
+  <p class="text-sm font-bold text-white-400 py-2">عنوان الدفع</p>
+  <div class="bg-gray-700/50 p-3 rounded-lg flex items-center justify-between">
+    <span id="usdtAddress" class="font-mono text-xs truncate text-right flex-grow">TAn9TdRrbH46hKzKQEmSt2rWFbKM2GZYM5</span>
+    <button onclick="copyAddress()" class="text-purple-400 hover:text-purple-300 ml-2">
+      <i class="far fa-copy"></i>
+    </button>
+  </div>
+  <p class="text-xs text-yellow-400 py-2 text-right">إرسال عملة USDT على شبكة الترون (TRC-20)</p>
+</div>
+
+<div class="mb-5 flex justify-center">
+  <canvas id="qrcode" class="rounded-lg border-2 border-purple-500/30"></canvas>
+</div>
+
+<div class="mb-4 text-center">
+  <div id="loadingSpinner" class="animate-spin rounded-full h-8 w-8 border-4 border-purple-500 border-t-transparent mx-auto mb-3"></div>
+  <p class="text-sm text-purple-300 font-medium">بانتظار تأكيد الدفع...</p>
+  <p class="text-xs text-red-300 mt-2">الوقت المتبقي: <span id="paymentTimer">05:00</span></p>
+</div>
+
                     </div>
                     
                     <button onclick="document.getElementById('paymentModal').classList.add('hidden'); cancelPayment();" 
@@ -1414,6 +1415,7 @@ window.cancelPayment = cancelPayment;
 
 </body>
 </html>
+
 
 
 
